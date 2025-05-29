@@ -1,38 +1,62 @@
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .green {
-	color: green;
+  color: #22c55e; /* Tailwind's green-500 for better visibility */
+  font-weight: 600;
 }
 
 .red {
-	color: red;
+  color: #ef4444; /* Tailwind's red-500 for better visibility */
+  font-weight: 600;
 }
 
 .fa-edit {
-	cursor: pointer;
-	margin-right: 20px;
+  cursor: pointer;
+  margin-right: 16px;
+  transition: color 0.2s;
+}
+
+.fa-edit:hover {
+  color: #0ea5e9; /* Tailwind's sky-500 for hover effect */
 }
 
 .chatroom-users {
-	width: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+  object-fit: cover;
 }
 
 #messages {
-	height: 300px;
-	overflow-y: scroll;
+  height: 320px;
+  overflow-y: auto;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 #main-body {
-	margin-top: 80px;
-	margin-bottom: 60px;
+  margin-top: 64px;
+  margin-bottom: 48px;
+  padding: 0 16px;
 }
 
 h2 {
-	margin-bottom: 25px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b; /* Slate-800 */
 }
 
 .post-icons {
-	margin-right: 10px;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: transform 0.15s;
+}
+
+.post-icons:hover {
+  transform: scale(1.15);
 }
